@@ -1,0 +1,1300 @@
+2017-09-07 08:35:50 [127.0.0.1][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Request.php:1292
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Request.php(1274): yii\web\Request->loadCookies()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Request.php(1355): yii\web\Request->getCookies()
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Request.php(1338): yii\web\Request->loadCsrfToken()
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/helpers/BaseHtml.php(302): yii\web\Request->getCsrfToken()
+#4 /Users/ytron123/htdoc/y/views/layouts/main.php(21): yii\helpers\BaseHtml::csrfMetaTags()
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(330): require('/Users/ytron123...')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Users/ytron123...', Array)
+#7 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile('/Users/ytron123...', Array, Object(app\controllers\SiteController))
+#8 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent('<div class="sit...')
+#9 /Users/ytron123/htdoc/y/controllers/SiteController.php(64): yii\base\Controller->render('index')
+#10 [internal function]: app\controllers\SiteController->actionIndex()
+#11 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#14 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', Array)
+#15 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#17 {main}
+2017-09-07 08:35:49 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'WbDoxcCoZCgAAM2bFDYAAAAC'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_X_LANTERN_AUTH_TOKEN' => '54Azj8BW6pj3lAHJuRO7q8aMFiMlfPsBrawr0yjd7vDkV81ZGt44hj0GYa3s788U'
+    'HTTP_X_LANTERN_DEVICE_ID' => 'mFrr2mkg'
+    'HTTP_X_LANTERN_PRO_TOKEN' => 'PgaM24uXjxkAK1J8JbYKnXU_3gfkd2BEVTZYFM6kb8vF0oRdx-MxcQ'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504766149.919
+    'REQUEST_TIME' => 1504766149
+]
+2017-09-07 08:35:50 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception (Invalid Configuration) 'yii\base\InvalidConfigException' with message 'yii\web\Request::cookieValidationKey must be configured with a secret key.' 
+
+in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Request.php:1292
+
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Request.php(1274): yii\web\Request->loadCookies()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/User.php(555): yii\web\Request->getCookies()
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/User.php(674): yii\web\User->loginByCookie()
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIdentity()
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2-debug/panels/UserPanel.php(54): yii\base\Component->__get('identity')
+#7 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2-debug/LogTarget.php(54): yii\debug\panels\UserPanel->save()
+#8 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#9 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#10 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/log/Logger.php(177): yii\log\Dispatcher->dispatch(Array, true)
+#11 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/ErrorHandler.php(113): yii\log\Logger->flush(true)
+#12 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\base\InvalidConfigException))
+#13 {main}
+2017-09-07 08:35:49 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'UNIQUE_ID' => 'WbDoxcCoZCgAAM2bFDYAAAAC'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_X_LANTERN_AUTH_TOKEN' => '54Azj8BW6pj3lAHJuRO7q8aMFiMlfPsBrawr0yjd7vDkV81ZGt44hj0GYa3s788U'
+    'HTTP_X_LANTERN_DEVICE_ID' => 'mFrr2mkg'
+    'HTTP_X_LANTERN_PRO_TOKEN' => 'PgaM24uXjxkAK1J8JbYKnXU_3gfkd2BEVTZYFM6kb8vF0oRdx-MxcQ'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54885'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504766149.919
+    'REQUEST_TIME' => 1504766149
+]
+2017-09-07 09:03:52 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "bug".' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug', Array)
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-07 09:03:52 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDvWMCoZCgAAOOXWyIAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDvWMCoZCgAAOOXWyIAAAAJ'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '60307'
+    'REDIRECT_URL' => '/bug'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504767832.044
+    'REQUEST_TIME' => 1504767832
+]
+2017-09-07 09:18:05 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: bug/web/' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug/web/', Array)
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-07 09:18:04 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDyrMCoZCgAAN-fYrgAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDyrMCoZCgAAN-fYrgAAAAB'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '63110'
+    'REDIRECT_URL' => '/bug/web/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504768684.79
+    'REQUEST_TIME' => 1504768684
+]
+2017-09-07 09:18:23 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: bug/web/' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', Array)
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug/web/', Array)
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-09-07 09:18:23 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDyv8CoZCgAAOOXWyUAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDyv8CoZCgAAOOXWyUAAAAJ'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '63194'
+    'REDIRECT_URL' => '/bug/web/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504768703.636
+    'REQUEST_TIME' => 1504768703
+]
+2017-09-07 09:19:24 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Controller::render(), called in /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php on line 16 and defined' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php:379
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionIndex()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#6 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-07 09:19:24 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDy-MCoZCgAAN-iXMMAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDy-MCoZCgAAN-iXMMAAAAE'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '63455'
+    'REDIRECT_URL' => '/bug/web/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504768764.556
+    'REQUEST_TIME' => 1504768764
+]
+2017-09-07 09:19:34 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Controller::render(), called in /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php on line 16 and defined' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php:379
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionIndex()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#6 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-07 09:19:34 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDzBsCoZCgAAONN18oAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDzBsCoZCgAAONN18oAAAAG'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '63501'
+    'REDIRECT_URL' => '/bug/web/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504768774.795
+    'REQUEST_TIME' => 1504768774
+]
+2017-09-07 09:19:41 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected end of file' in /Users/ytron123/htdoc/y/modules/bug/views/web/index.php:8
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('', '', '')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('', '', '')
+#2 /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php(16): yii\base\Controller->render('', '')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionIndex()
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#7 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#8 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#9 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-09-07 09:19:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDzDcCoZCgAAO6yj@oAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDzDcCoZCgAAO6yj@oAAAAD'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '63503'
+    'REDIRECT_URL' => '/bug/web/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504768781.561
+    'REQUEST_TIME' => 1504768781
+]
+2017-09-07 09:19:42 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected end of file' in /Users/ytron123/htdoc/y/modules/bug/views/web/index.php:8
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('', '', '')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('', '', '')
+#2 /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php(16): yii\base\Controller->render('', '')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionIndex()
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#7 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#8 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#9 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-09-07 09:19:42 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbDzDsCoZCgAAOOXWykAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbDzDsCoZCgAAOOXWykAAAAJ'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '63504'
+    'REDIRECT_URL' => '/bug/web/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504768782.422
+    'REQUEST_TIME' => 1504768782
+]
+2017-09-07 11:12:20 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined method app\modules\bug\extend\bugUrlExtend::re()' in /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php:23
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#5 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-09-07 11:12:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'url' => 'https://alpha.52jxl.com/Mobile/Ecard/checkCard/dec/46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbENdMCoZCgAAPL4DscAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbENdMCoZCgAAPL4DscAAAAF'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '53290'
+    'REDIRECT_URL' => '/bug/web/show'
+    'REDIRECT_QUERY_STRING' => 'url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'REQUEST_URI' => '/bug/web/show?url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775540.413
+    'REQUEST_TIME' => 1504775540
+]
+2017-09-07 11:12:47 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for app\modules\bug\extend\bugUrlExtend::checkUrl(), called in /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php on line 22 and defined' in /Users/ytron123/htdoc/y/modules/bug/extend/bugUrlExtend.php:26
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#6 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-07 11:12:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'url' => 'https://alpha.52jxl.com/Mobile/Ecard/checkCard/dec/46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbENj8CoZCgAAPo7ofAAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbENj8CoZCgAAPo7ofAAAAAC'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '53401'
+    'REDIRECT_URL' => '/bug/web/show'
+    'REDIRECT_QUERY_STRING' => 'url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'REQUEST_URI' => '/bug/web/show?url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775567.101
+    'REQUEST_TIME' => 1504775567
+]
+2017-09-07 11:13:02 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Access to undeclared static property: app\modules\bug\extend\bugUrlExtend::$postUrl' in /Users/ytron123/htdoc/y/modules/bug/extend/bugUrlExtend.php:27
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#6 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-09-07 11:13:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'url' => 'https://alpha.52jxl.com/Mobile/Ecard/checkCard/dec/46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbENncCoZCgAATFa3SEAAAAH'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbENncCoZCgAATFa3SEAAAAH'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '53469'
+    'REDIRECT_URL' => '/bug/web/show'
+    'REDIRECT_QUERY_STRING' => 'url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'REQUEST_URI' => '/bug/web/show?url=https%3A%2F%2Falpha.52jxl.com%2FMobile%2FEcard%2FcheckCard%2Fdec%2F46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775581.895
+    'REQUEST_TIME' => 1504775581
+]
+2017-09-07 11:16:25 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('show', Array)
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug/web/show', Array)
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#5 {main}
+2017-09-07 11:16:24 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_POST = [
+    'url' => 'https://alpha.52jxl.com/Mobile/Ecard/checkCard/dec/46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbEOaMCoZCgAAOOYR60AAAAK'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbEOaMCoZCgAAOOYR60AAAAK'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://b.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54227'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775784.979
+    'REQUEST_TIME' => 1504775784
+]
+2017-09-07 11:16:40 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('show', Array)
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug/web/show', Array)
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#5 {main}
+2017-09-07 11:16:40 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_POST = [
+    'url' => 'https://alpha.52jxl.com/Mobile/Ecard/checkCard/dec/46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbEOeMCoZCgAARdTv28AAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbEOeMCoZCgAARdTv28AAAAG'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://b.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54348'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775800.489
+    'REQUEST_TIME' => 1504775800
+]
+2017-09-07 11:16:48 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('show', Array)
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug/web/show', Array)
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#5 {main}
+2017-09-07 11:16:48 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_POST = [
+    'url' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbEOgMCoZCgAAOkR7YsAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbEOgMCoZCgAAOkR7YsAAAAI'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://b.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54351'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775808.857
+    'REQUEST_TIME' => 1504775808
+]
+2017-09-07 11:16:55 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Controller.php:166
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('show', Array)
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('bug/web/show', Array)
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 /Users/ytron123/htdoc/y/web/index.php(12): yii\base\Application->run()
+#5 {main}
+2017-09-07 11:16:55 [127.0.0.1][-][t11gaktlabc9s1efdjvhp61mr5][info][application] $_POST = [
+    'url' => 'https://alpha.52jxl.com/Mobile/Ecard/checkCard/dec/46Aeoo00oZgTYkMG058ofXQ8ugO0O0OO0O0O.html'
+]
+
+$_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'turowe'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbEOh8CoZCgAAPL4DtAAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbEOh8CoZCgAAPL4DtAAAAAF'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://b.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://b.com/bug/web/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54352'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504775815.168
+    'REQUEST_TIME' => 1504775815
+]
+2017-09-08 05:01:06 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 91' in /Users/ytron123/htdoc/y/modules/bug/extend/inc.php:48
+Stack trace:
+#0 /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php(24): app\modules\bug\extend\bugUrlExtend->checkUrl('')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#7 /Users/ytron123/htdoc/y/web/index.php(16): yii\base\Application->run()
+#8 {main}
+2017-09-08 05:01:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbIH8sCoZCgAAOQrh5IAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbIH8sCoZCgAAOQrh5IAAAAA'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '58455'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504839666.473
+    'REQUEST_TIME' => 1504839666
+]
+2017-09-08 05:01:08 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 91' in /Users/ytron123/htdoc/y/modules/bug/extend/inc.php:48
+Stack trace:
+#0 /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php(24): app\modules\bug\extend\bugUrlExtend->checkUrl('')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#7 /Users/ytron123/htdoc/y/web/index.php(16): yii\base\Application->run()
+#8 {main}
+2017-09-08 05:01:08 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbIH9MCoZCgAATpq6jYAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbIH9MCoZCgAATpq6jYAAAAE'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '58456'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504839668.766
+    'REQUEST_TIME' => 1504839668
+]
+2017-09-08 06:00:41 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')'' in /Users/ytron123/htdoc/y/modules/bug/extend/bugUrlExtend.php:41
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(25): ::spl_autoload_call('')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#7 /Users/ytron123/htdoc/y/web/index.php(16): yii\base\Application->run()
+#8 {main}
+2017-09-08 06:00:41 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbIV6cCoZCgAATr494MAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbIV6cCoZCgAATr494MAAAAB'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '54129'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504843241.608
+    'REQUEST_TIME' => 1504843241
+]
+2017-09-08 07:51:32 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in /Users/ytron123/htdoc/y/modules/bug/extend/bugUrlExtend.php:41
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#3 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#6 /Users/ytron123/htdoc/y/web/index.php(16): yii\base\Application->run()
+#7 {main}
+2017-09-08 07:51:32 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbIv48CoZCgAAPL4DucAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbIv48CoZCgAAPL4DucAAAAF'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '55567'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504849891.893
+    'REQUEST_TIME' => 1504849891
+]
+2017-09-08 07:55:12 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: info' in /Users/ytron123/htdoc/y/modules/bug/views/web/show.php:6
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('', '')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('', '', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('', '', '')
+#3 /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php(27): yii\base\Controller->render('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#7 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#8 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#9 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#10 /Users/ytron123/htdoc/y/web/index.php(16): yii\base\Application->run()
+#11 {main}
+2017-09-08 07:55:12 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbIwwMCoZCgAATpq6kUAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbIwwMCoZCgAATpq6kUAAAAE'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '56469'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504850112.855
+    'REQUEST_TIME' => 1504850112
+]
+2017-09-08 09:36:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in /Users/ytron123/htdoc/y/modules/bug/views/web/show.php:9
+Stack trace:
+#0 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('', '')
+#1 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('', '', '')
+#2 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('', '', '')
+#3 /Users/ytron123/htdoc/y/modules/bug/controllers/WebController.php(28): yii\base\Controller->render('', '')
+#4 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): app\modules\bug\controllers\WebController->actionShow()
+#5 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/InlineAction.php:57}('', '')
+#6 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('')
+#7 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('', '')
+#8 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('', '')
+#9 /Users/ytron123/htdoc/y/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest('')
+#10 /Users/ytron123/htdoc/y/web/index.php(16): yii\base\Application->run()
+#11 {main}
+2017-09-08 09:36:38 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"öú1z)5¥›Ÿ^h®ˆm|‚¨B´uƒ½9L¥²\";}'
+    'PHPSESSID' => 't11gaktlabc9s1efdjvhp61mr5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WbJIhsCoZCgAAPapricAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WbJIhsCoZCgAAPapricAAAAJ'
+    'HTTP_HOST' => 'b.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf=99ad938397d5fa4ce05caa516d8f3f2f2fbf457c985caf6dabd341784ba98530a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%F6%FA1z%295%A5%9B%9F%5Eh%0B%AE%88%8Em%7C%82%06%A8B%B4u%83%BD%8F9L%9D%A5%06%B2%22%3B%7D; PHPSESSID=t11gaktlabc9s1efdjvhp61mr5'
+    'PATH' => '/sbin:/usr/sbin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.26 (Unix) OpenSSL/1.0.2l PHP/5.6.31 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'b.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Users/ytron123/htdoc/y/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/ytron123/htdoc/y/web/index.php'
+    'REMOTE_PORT' => '55630'
+    'REDIRECT_URL' => '/bug/web/show'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/bug/web/show'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1504856198.557
+    'REQUEST_TIME' => 1504856198
+]
